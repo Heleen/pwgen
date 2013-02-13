@@ -37,6 +37,6 @@ Options
     -p --print          Do print password to stdout and copy it to clipboard.
 
 
-.. NOTE:: For easy usage add the following to your .bashrc profile: alias pwgen='python [location to file]'
+.. NOTE:: For easy usage add the following to your .bashrc profile: ``alias pwgen='python [location to file]'``.
 
 .. NOTE:: TODO: add password strength checker.
