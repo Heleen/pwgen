@@ -16,6 +16,7 @@ Usage
 -----
 
 ::
+
     pwgen.py [<length>] [-d | --default] [([-x | --clipboard] | [-p | --print])]
     pwgen.py [<length>] [-l | --lowercase] [-u | --uppercase] [-n | --numbers] [-c | --characters] [--charset=<chars>] [([-x | --clipboard] | [-p | --print])]
     pwgen.py ( -h | --help)
@@ -24,6 +25,7 @@ Options
 -------
 
 ::
+
     -h --help           Show this screen.
     -d --default        Use default settings (14 -lunc).
     -l --lowercase      Add lowercase letters to the character set.
