@@ -8,9 +8,9 @@ Requires:
     xerox (optional)
 
 Usage:
-    pygen.py [<length>] [-d | --default] [([-x | --clipboard] | [-p | --print])]
-    pygen.py [<length>] [-l | --lowercase] [-u | --uppercase] [-n | --numbers] [-c | --characters] [--charset=<chars>] [([-x | --clipboard] | [-p | --print])]
-    pygen.py ( -h | --help)
+    pwgen.py [<length>] [-d | --default] [([-x | --clipboard] | [-p | --print])]
+    pwgen.py [<length>] [-l | --lowercase] [-u | --uppercase] [-n | --numbers] [-c | --characters] [--charset=<chars>] [([-x | --clipboard] | [-p | --print])]
+    pwgen.py ( -h | --help)
 
 Options:
     -h --help           Show this screen.
