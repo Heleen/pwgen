@@ -39,4 +39,7 @@ Options
 
 .. NOTE:: For easy usage add the following to your .bashrc profile: ``alias pwgen='python [location to file]'``.
 
-.. NOTE:: TODO: add password strength checker.
+.. NOTE:: TODO: 
+
+    * add password strength checker;
+    * add regex option (for when you need a password which, for example, starts with a capital or has 3 numbers,...).
