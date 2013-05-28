@@ -37,7 +37,7 @@ Options
     -x --no-clipboard   Do not copy the password to clipboard, but print it to stdout instead.
     -p --print          Do print password to stdout and copy it to clipboard.
 
-.. NOTE:: If zxcvbn is installed the password strength will always be printed.
+.. NOTE:: If zxcvbn is installed the password strength will always be printed (crack time: "instant", "6 minutes" or "centuries", etc., score: [0,1,2,3,4] if crack time is less than [10**2, 10**4, 10**6, 10**8, Infinity]). See `the Git repository of zxcvbn <https://github.com/rpearl/python-zxcvbn>`_ for more details.
 
 .. NOTE:: For easy usage add the following to your .bashrc profile: ``alias pwgen='python [location to file]'``.
 
