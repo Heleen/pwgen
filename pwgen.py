@@ -92,7 +92,7 @@ def main(argv={}):
     try:
         from zxcvbn import password_strength
         strength = password_strength(password)
-        print strength['crack_time_display'], strength['score']
+        print 'crack time: ' + strength['crack_time_display'] + ', score: ' + str(strength['score'])
     except ImportError:
         print no_zxcvbn_error
 
