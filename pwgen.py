@@ -25,7 +25,7 @@ Options:
 
 For easy usage add the following to your .bashrc profile: alias pwgen='python [location to file]'
 
-TODO: 
+TODO:
     * add password strength checker;
     * add regex option (for when you need a password which, for example, starts with a capital or has 3 numbers,...).
 
@@ -37,6 +37,7 @@ from random import randint
 
 """ Global error definitions """
 no_xerox_error = "Password not copied to clipboard, please install Xerox: https://github.com/kennethreitz/xerox."
+no_zxcvbn_error = "The strength of the password could not be estimated, please install zxcvbn: https://pypi.python.org/pypi/zxcvbn/1.0."
 
 """ Global variables """
 lowercase_letters = list(string.lowercase[:26])
@@ -88,6 +89,12 @@ def main(argv={}):
             print no_xerox_error
     if argv['--print'] or argv['--no-clipboard']:
         print password
+    try:
+        from zxcvbn import password_strength
+        strength = password_strength(password)
+        print strength['crack_time_display'], strength['score']
+    except ImportError:
+        print no_zxcvbn_error
 
 
 if __name__ == '__main__':

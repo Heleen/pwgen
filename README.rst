@@ -11,6 +11,7 @@ Requires
 
 * docopt
 * xerox (optional)
+* zxcvbn (optional)
 
 Usage
 -----
@@ -36,10 +37,10 @@ Options
     -x --no-clipboard   Do not copy the password to clipboard, but print it to stdout instead.
     -p --print          Do print password to stdout and copy it to clipboard.
 
+.. NOTE:: If zxcvbn is installed the password strength will always be printed.
 
 .. NOTE:: For easy usage add the following to your .bashrc profile: ``alias pwgen='python [location to file]'``.
 
 .. NOTE:: TODO: 
 
-    * add password strength checker;
     * add regex option (for when you need a password which, for example, starts with a capital or has 3 numbers,...).
