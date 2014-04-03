@@ -6,6 +6,23 @@ Description
 
 Generates a random password.
 
+Installation
+------------
+
+Clone the repo to your machine::
+
+    git clone https://github.com/Heleen/pwgen.git
+
+Use ``easy_install`` or ``pip install`` to install the necessary packages::
+
+    easy_install docopt
+
+Use ``easy_install`` or ``pip install`` to install the optional packages::
+
+    easy_install xerox zxcvbn
+
+For easy usage you could add the following to your ``.bashrc`` profile: ``alias pwgen='python {path to file}/pwgen.py'``.
+
 Requires
 --------
 
@@ -39,7 +56,7 @@ Options
 
 .. NOTE:: If zxcvbn is installed the password strength will always be printed (crack time: "instant", "6 minutes" or "centuries", etc., score: [0,1,2,3,4] if crack time is less than [10**2, 10**4, 10**6, 10**8, Infinity]). See `the Git repository of zxcvbn <https://github.com/rpearl/python-zxcvbn>`_ for more details.
 
-.. NOTE:: For easy usage add the following to your .bashrc profile: ``alias pwgen='python [location to file]'``.
+.. NOTE:: For easy usage add the following to your .bashrc profile: ``alias pwgen='python {path to file}/pwgen.py'``.
 
 .. NOTE:: TODO: 
 

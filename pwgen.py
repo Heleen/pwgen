@@ -26,7 +26,7 @@ Options:
 
 If zxcvbn is installed the password strength will always be printed (crack time: "instant", "6 minutes" or "centuries", etc., score: [0,1,2,3,4] if crack time is less than [10**2, 10**4, 10**6, 10**8, Infinity]). See the Git repository of (python-)zxcvbn for more details.
 
-For easy usage add the following to your .bashrc profile: alias pwgen='python [location to file]'.
+For easy usage add the following to your .bashrc profile: alias pwgen='python {path to file}/pwgen.py'.
 
 TODO:
     * add regex option (for when you need a password which, for example, starts with a capital or has 3 numbers,...).
